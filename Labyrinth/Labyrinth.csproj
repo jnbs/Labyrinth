@@ -69,6 +69,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -82,6 +83,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blankTile.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bonfireSprite.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goldSprite.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pitSprite.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rangerSprite.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torchSprite.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wumpusSprite.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowSprite.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hitSprite.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
