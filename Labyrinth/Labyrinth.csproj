@@ -54,6 +54,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Programming\PrgmClass.cs" />
+    <Compile Include="Programming\PrgmFunction.cs" />
+    <Compile Include="Programming\ProgramManager.cs" />
     <Compile Include="Programming\Variable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
