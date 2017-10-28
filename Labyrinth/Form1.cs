@@ -12,16 +12,13 @@ namespace Labyrinth
 {
     public partial class Form1 : Form
     {
+
+        int spriteX = 0;
+        int spriteY = 0;
+
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Point currentLocation = sprite1.Location;
-            currentLocation.X+=25;
-            sprite1.Location = currentLocation;
         }
 
         private void importButton_Click(object sender, EventArgs e)
@@ -39,25 +36,70 @@ namespace Labyrinth
             }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            moveRight();
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
-            Point currentLocation = sprite1.Location;
-            currentLocation.X -= 25;
-            sprite1.Location = currentLocation;
+            moveLeft();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            moveUp();
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            moveDown();
         }
 
         private void moveLeft()
         {
-            Point currentLocation = sprite1.Location;
-            currentLocation.X -= 25;
-            sprite1.Location = currentLocation;
+            if (spriteX > 0)
+            {
+                Point currentLocation = sprite1.Location;
+                currentLocation.X -= 25;
+                sprite1.Location = currentLocation;
+                spriteX--;
+            }
         }
 
         private void moveRight()
         {
-            Point currentLocation = sprite1.Location;
-            currentLocation.X += 25;
-            sprite1.Location = currentLocation;
+            if (spriteX < 15)
+            {
+                Point currentLocation = sprite1.Location;
+                currentLocation.X += 25;
+                sprite1.Location = currentLocation;
+                spriteX++;
+            }
         }
+
+        private void moveUp()
+        {
+            if (spriteY > 0)
+            {
+                Point currentLocation = sprite1.Location;
+                currentLocation.Y -= 25;
+                sprite1.Location = currentLocation;
+                spriteY--;
+            }
+        }
+
+        private void moveDown()
+        {
+            if (spriteY < 15)
+            {
+                Point currentLocation = sprite1.Location;
+                currentLocation.Y += 25;
+                sprite1.Location = currentLocation;
+                spriteY++;
+            }
+        }
+
+
     }
 }
