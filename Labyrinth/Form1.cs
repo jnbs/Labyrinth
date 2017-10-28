@@ -20,7 +20,7 @@ namespace Labyrinth
         private void button1_Click(object sender, EventArgs e)
         {
             Point currentLocation = sprite1.Location;
-            currentLocation.X++;
+            currentLocation.X+=25;
             sprite1.Location = currentLocation;
         }
 
@@ -35,14 +35,28 @@ namespace Labyrinth
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-
+                //import code here
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Point currentLocation = sprite1.Location;
-            currentLocation.X += 5;
+            currentLocation.X -= 25;
+            sprite1.Location = currentLocation;
+        }
+
+        private void moveLeft()
+        {
+            Point currentLocation = sprite1.Location;
+            currentLocation.X -= 25;
+            sprite1.Location = currentLocation;
+        }
+
+        private void moveRight()
+        {
+            Point currentLocation = sprite1.Location;
+            currentLocation.X += 25;
             sprite1.Location = currentLocation;
         }
     }
