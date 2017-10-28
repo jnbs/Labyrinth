@@ -45,5 +45,19 @@ namespace Labyrinth
             currentLocation.X -= 25;
             sprite1.Location = currentLocation;
         }
+
+        private void moveLeft()
+        {
+            Point currentLocation = sprite1.Location;
+            currentLocation.X -= 25;
+            sprite1.Location = currentLocation;
+        }
+
+        private void moveRight()
+        {
+            Point currentLocation = sprite1.Location;
+            currentLocation.X += 25;
+            sprite1.Location = currentLocation;
+        }
     }
 }
