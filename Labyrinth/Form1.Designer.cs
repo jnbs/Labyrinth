@@ -29,25 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.sprite1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.importButton = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.sprite1)).BeginInit();
+            this.shootButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // sprite1
-            // 
-            this.sprite1.Image = ((System.Drawing.Image)(resources.GetObject("sprite1.Image")));
-            this.sprite1.Location = new System.Drawing.Point(93, 0);
-            this.sprite1.Name = "sprite1";
-            this.sprite1.Size = new System.Drawing.Size(50, 50);
-            this.sprite1.TabIndex = 0;
-            this.sprite1.TabStop = false;
             // 
             // button1
             // 
@@ -85,10 +75,11 @@
             this.pictureBox1.Location = new System.Drawing.Point(93, 0);
             this.pictureBox1.MinimumSize = new System.Drawing.Size(400, 400);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(800, 800);
+            this.pictureBox1.Size = new System.Drawing.Size(400, 400);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
             // 
             // button3
             // 
@@ -110,22 +101,32 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
+            // shootButton
+            // 
+            this.shootButton.Location = new System.Drawing.Point(0, 387);
+            this.shootButton.Name = "shootButton";
+            this.shootButton.Size = new System.Drawing.Size(87, 90);
+            this.shootButton.TabIndex = 7;
+            this.shootButton.Text = "Shoot";
+            this.shootButton.UseVisualStyleBackColor = true;
+            this.shootButton.Click += new System.EventHandler(this.shootButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(474, 429);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(819, 614);
+            this.Controls.Add(this.shootButton);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.importButton);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.sprite1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.sprite1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -133,14 +134,13 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox sprite1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button importButton;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button shootButton;
     }
 }
 
